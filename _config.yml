@@ -29,7 +29,7 @@ avatar: "/img/avatar-icon.png"
 navbar-links:
   Home: ""
   Guides: '/guides.faalis.io'
-  Docs: "/www.rubydoc.info/gems/faalis"
+  Docs: "/api.faalis.io"
 #  Sponsors: "/sponsors/"
 
 # --- Footer options --- #
