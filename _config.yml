@@ -30,6 +30,7 @@ navbar-links:
   Home: ""
   Guides: '/guides.faalis.io'
   Docs: "/api.faalis.io"
+  Sponsors: 'sponsors.html'
 #  Sponsors: "/sponsors/"
 
 # --- Footer options --- #
