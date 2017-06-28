@@ -1,0 +1,4 @@
+* Customize
+** CNAME
+** _config.yml files
+** copy logo

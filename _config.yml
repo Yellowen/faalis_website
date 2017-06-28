@@ -1,109 +1,146 @@
-# --- Serving options --- #
+# Hexo Configuration
+## Docs: http://zespia.tw/hexo/docs/configuration.html
+## Source: https://github.com/tommy351/hexo/
 
-# url is the full website URL
-# baseurl is the website's URL without the hostname
+# Site
+title: Empty Shell
+subtitle: "something"
+description: "Empty project shell"
+author: lxsameer
+email: lxsameer@gnul.org
+language:
 
-# If you are building a simple GitHub user page (username.github.io) then use these settings:
-url: "http://faalis.io"
-baseurl: ""
 
-# If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://empty.shell
+root: /
+permalink: :year/:month/:day/:title/
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+site_repo: //github.com/
+github: //github.com/product
+get_started_url: /somewher
+license_url: //gpl
+license_name: GPLv2
+copyright_holder: Codamic
 
-# Of course don't forget to change the username and projectname to YOUR username and project
+# Directory
+source_dir: src
+public_dir: public
 
-# Name of website
-title: Faalis
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+auto_spacing: false # Add spaces between asian characters and western characters
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+max_open_file: 100
+multi_thread: true
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+highlight:
+  enable: true
+  line_number: false
+  tab_replace:
 
-# Short description of your site
-description: A Rails platform to rapidly build web applications.
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
 
-# --- Navigation bar options --- #
+# Archives
+## 2: Enable pagination
+## 1: Disable pagination
+## 0: Fully Disable
+archive: 0
+category: 0
+tag: 0
 
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+# Server
+## Hexo uses Connect as a server
+## You can customize the logger format as defined in
+## http://www.senchalabs.org/connect/logger.html
+port: 4000
+logger: false
+logger_format:
 
-# List of links in the navigation bar
-navbar-links:
-  Home: ""
-  Guides: '/guides.faalis.io'
-  Docs: "/api.faalis.io"
-  Sponsors: 'sponsors.html'
-#  Sponsors: "/sponsors/"
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: MMM D YYYY
+time_format: H:mm:ss
 
-# --- Footer options --- #
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
 
-# Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
-author:
-  name: Faalis
-  email: "hello@faalis.io"
-  facebook: yourname  # eg. daattali
-  github: Yellowen    # eg. daattali
-  twitter: yellowen_inc   # eg. daattali
-  #linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
-  #stackoverflow: yourlink  # eg. "users/3943160/daattali"
+# Disqus
+disqus_shortname:
 
-# Select which links to show in the footer
-footer-links-active:
-  rss: true
-  facebook: false
-  email: false
-  twitter: true
-  github: true
-  linkedin: false
-  stackoverflow: false
+# Extensions
+## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
+## Themes: https://github.com/tommy351/hexo/wiki/Themes
+theme: shell
+exclude_generator:
 
-# How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "Faalis.io"  # eg. "deanattali.com/beautiful-jekyll"
+# Markdown
+## https://github.com/chjj/marked
+markdown:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
 
-# --- Misc --- #
+# Offline
+## Config passed to sw-precache
+## https://github.com/JLHwung/hexo-offline
+offline:
+  maximumFileSizeToCacheInBytes: 10485760
+  staticFileGlobs:
+    - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,json,xml}
+  stripPrefix: public
+  verbose: true
+  runtimeCaching:
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: sendgrid.sp1.convertro.com
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: ad.doubleclick.net
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: cdn.jsdelivr.net
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: fonts.googleapis.com
+    - urlPattern: /*
+      handler: cacheFirst
+      options:
+        origin: fonts.gstatic.com
 
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+# Deployment
+## Docs: http://zespia.tw/hexo/docs/deployment.html
+deploy:
+  type: git
+  repository: git@github.com:codamic/empty_shell.git
 
-# Fill in your Google Analytics ID to track your website using GA
-#google_analytics: "UA-62869914-1"
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
 
-# --- Don't need to touch anything below here (but you can if you want) --- #
-
-# Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
-markdown: kramdown
-highlighter: pygments
-permalink: /:year-:month-:day-:title
-paginate: 5
-
-# Default YAML values (more information on Jekyll's site)
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      comments: true  # add comments to all blog posts
-  -
-    scope:
-      path: "" # all files
-    values:
-      layout: "default"
-
-# Exclude these files from production site
-exclude:
-  - LICENSE
-  - README.md
-
-# prose.io options
-prose:
-  ignore:
-    - 404.html
-    - LICENSE
-    - feed.xml
-    - /_includes
-    - /_layouts
-    - /css
-    - /img
-    - /js
+alias:
+  api/index.html: v2/api/index.html
