@@ -1,4 +1,4 @@
-site_description: "EmptyShell"
+site_description: "The ultimate user dashboard for Ruby On Rails"
 google_analytics:
 root_domain: emptyshell.io
-emptyshell_version: 2.3.0
+faalis_version: 2.2.0

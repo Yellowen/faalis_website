@@ -3,7 +3,7 @@
     <input type="text" id="search-query-<%- context %>" class="search-query st-default-search-input">
   </form>
 </li>
-<li><a href="<%- url_for("/v2/guide/") %>" class="nav-link<%- page.path.match(/guide/) ? ' current' : '' %>">Guide</a></li>
-<li><a href="<%- url_for("/v2/api/") %>" class="nav-link<%- page.path.match(/api/) ? ' current' : '' %>">API</a></li>
-<%- partial('partials/ecosystem_dropdown') %>
+<li><a href="//docs.faalis.io" class="nav-link">Guide</a></li>
+<li><a href="//api.faalis.io" class="nav-link">API</a></li>
+<%- partial('partials/ecosystem_dropdown') %>_
 <% partial('partials/language_dropdown') %>

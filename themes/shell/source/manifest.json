@@ -1,6 +1,6 @@
 {
   "background_color": "#ffffff",
-  "description": "empty shell is awesome",
+  "description": "The ultimate dashboard for Ruby On Rails",
   "display": "standalone",
   "icons": [
     {
@@ -41,8 +41,8 @@
     }
   ],
   "lang": "en-US",
-  "name": "empty shell",
-  "short_name": "empty shell",
+  "name": "Faalis",
+  "short_name": "Faalis",
   "start_url": "./menu",
-  "theme_color": "#4fc08d"
+  "theme_color": "#642B59"
 }
