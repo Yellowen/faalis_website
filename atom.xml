@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Faalis</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://faalis.io/"/>
+  <updated>2017-06-28T22:03:37.669Z</updated>
+  <id>http://faalis.io/</id>
+  
+  <author>
+    <name>Yellowen</name>
+    <email>dev@yellowen.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Example</title>
+    <link href="http://faalis.io/2015/12/28/example/"/>
+    <id>http://faalis.io/2015/12/28/example/</id>
+    <published>2015-12-28T00:00:00.000Z</published>
+    <updated>2017-06-28T22:03:37.669Z</updated>
+    
+    <content type="html"><![CDATA[<p>Some short desc</p>
+<a id="more"></a>
+<h3 id="some-title"><a href="#some-title" class="headerlink" title="some title"></a>some title</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Some short desc&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
