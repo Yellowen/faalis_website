@@ -774,3 +774,7 @@ body {
     color: #a86d95;
   }
 }
+.gitter-open-chat-button,
+.gitter-open-chat-button:visited {
+  background-color: #af799d;
+}
